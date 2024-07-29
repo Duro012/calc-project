@@ -1,3 +1,7 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
 public class CalculatorApp {
     private JFrame frame;
     private JTextField display;
