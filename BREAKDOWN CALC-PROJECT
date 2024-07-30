@@ -1,0 +1,35 @@
+Group name;DUROGBITAN A ISAIAH
+Project title; calc-project
+Group members matric numbers and names; BHU/22/04/09/0031
+                                        DUROGBITAN A ISAIAH
+
+      PROJECT DESCRIPTION AND SCREENSHOTS
+ the code implements a simple calculator using swing for the GUI and basic arithmetic operations
+
+imports necessary packages
+   =javax.swing for GUI components
+   =java.awt for layout and event handling
+   =java.awt.event for action listeners
+
+Define the CALCULATOR APP class with two instance variables
+   =frame (jframe)
+   =display (jtextfield)
+
+the CREATE GUI mehod sets up the GUI
+   =creates a jframe with a title and default close operation
+   =creates a jtextfield for displaying calculations and sets it to non-editable
+   =creates a jpanel with a grid layout for the buttons
+   =adds buttons with labels from the button array and attaches an action listener to each
+   =adds the display field to the north and button panel to the centre of the frame
+   =makes the frame visible
+
+the buttonlistener class implements the action listener interface
+   =handles the button clicks
+     ;if the "=" button is clicked, evaluates the expression in the display field and shows the result.
+     otherwise appends the button label to the display field
+
+the evaluate method evaluates a mathematical expression
+   =it uses a private inner class with methods to parse the expression, handling addition,subtraction,
+   multiplication,division,unary plus and minus,parentheses,numbers and functions
+
+the main method creates an instance of calculator app using swingutilities.invokelater to ensure thread safety
